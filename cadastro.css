@@ -3,4 +3,15 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 160px;
+    
+}
+#cadastrar{
+    font-style: normal italic;
+    align-items: center;
+    display: flex;
+}
+section{
+    padding: 45px;
+    border: 20px solid ;
+    border-color: black;
 }
