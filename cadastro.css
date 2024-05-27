@@ -12,6 +12,9 @@ body{
 }
 section{
     padding: 45px;
-    border: 20px solid ;
-    border-color: black;
+    border: 10px solid ;
+    border-color: #081333;
+}
+form{
+    padding-bottom: 30px;
 }
