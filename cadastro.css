@@ -10,7 +10,9 @@ body{
 #cadastrar{
     font-style: normal italic;
     align-items: center;
-    display: flex;    
+    display: flex;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 section{
     padding: 45px;
@@ -32,3 +34,24 @@ input[type="submit"] {
     font-style: italic;
     font-weight: bold;
   }
+input[type="text"] {
+    background-color: lightgrey;
+    overflow-x: visible;
+    height: 30px;
+}
+input[type="date"] {
+    background-color: lightgrey;
+    height: 30px;
+    width: 172px;
+}
+input[type="email"] {
+    background-color: lightgrey;
+    height: 30px;
+}
+input[type="password"] {
+    background-color: lightgrey;
+    height: 30px;
+}
+::placeholder {
+    color: black;
+}
