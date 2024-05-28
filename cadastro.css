@@ -10,13 +10,25 @@ body{
 #cadastrar{
     font-style: normal italic;
     align-items: center;
-    display: flex;
+    display: flex;    
 }
 section{
     padding: 45px;
     border: 10px solid ;
     border-color: #081333;
+    background-color:white;
 }
 form{
     padding-bottom: 30px;
 }
+input[type="submit"] {
+    width: 150px;
+    height: 50px;
+    background: #081333;
+    border: 5px solid ;
+    border-color: #000000;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
