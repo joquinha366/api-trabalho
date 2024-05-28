@@ -3,7 +3,9 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 160px;
-    
+    background-image: url("barbearia.jpg");
+    background-size: cover;
+    background-position: center top;
 }
 #cadastrar{
     font-style: normal italic;
