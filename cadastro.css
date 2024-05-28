@@ -6,6 +6,7 @@ body{
     background-image: url("barbearia.jpg");
     background-size: cover;
     background-position: center top;
+    
 }
 #cadastrar{
     font-style: normal italic;
@@ -13,19 +14,22 @@ body{
     display: flex;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-align: center;
 }
 section{
     padding: 45px;
     border: 10px solid ;
     border-color: #081333;
     background-color:white;
+    width: 300px;
+    height: 400px;
 }
 form{
     padding-bottom: 30px;
 }
 input[type="submit"] {
-    width: 150px;
-    height: 50px;
+    width: 175px;
+    height: 75px;
     background: #081333;
     border: 5px solid ;
     border-color: #000000;
@@ -33,6 +37,8 @@ input[type="submit"] {
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
+    margin-left: 60px;
+    margin-top: 60px;
   }
 input[type="text"] {
     background-color: lightgrey;
