@@ -1,0 +1,87 @@
+/* gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #fcfafa;
+    border: none;
+}
+
+body {
+    background-image: url('barbearia_3.png');
+    background-size: cover;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+a:hover {
+    color: #08558B;
+}
+
+/* apresentacao container */ 
+
+#apresentacao-container {
+    background-color: rgb(15, 2, 61);
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#whatsapp {
+    background-color: rgb(15, 2, 61);
+    width: 150px;
+    padding: 10px 10px;
+    margin-left: 170vh;
+    margin-right: auto;
+    border-radius: 10%;
+    margin-top: 3vh;
+}
+
+#corte {
+    width: 70px;
+    margin-left: 150px;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+.fade1 {
+    margin-left: 300px;
+    padding: 30px 20px;
+    border-radius: 50%;
+}
+
+.fade2 {
+    margin-left: 50px;
+    padding: 30px 20px;
+    border-radius: 70%;
+}
+
+.fade3 {
+    margin-left: 50px;
+    padding: 30px 20px;
+    border-radius: 50%;
+}
+
+.fade4 {
+    margin-left: 50px;
+    padding: 30px 20px;
+    border-radius: 50%;
+}
+
+#proximo{
+    background-color: rgb(15, 2, 61);
+    width: 100px;
+    margin-left: 185vh;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
