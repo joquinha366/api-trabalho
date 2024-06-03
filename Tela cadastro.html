@@ -9,14 +9,36 @@
 <body>
     <section id="Cadastro">
         <h2 id="cadastrar">CADASTRAR</h2>
-        <form>
+        <form id="form">
             <input type="text" id="fname" name="fname" placeholder="Nome:" ><br>
             <input type="email" id="femail" name="femail" placeholder="Email:"><br>
-            <input type="text" id="ftelefone" name="ftelefone" placeholder="Telefone:"><br>
+            <input type="text" id="fnumber" name="fnumber" placeholder="Telefone:"><br>
             <input type="date" id="fdata" name="fdata" placeholder="Data de Nascimento:"><br>
             <input type="password" id="fsenha" name="fsenha" placeholder="Senha:"><br><br>       
-            <input type="submit" value="Confirmar">
+            <input type="submit" onclick="validadeform(event)" value="Confirmar">
         </form>
     </section>
 </body>
+
+<script type="text/javascript">
+    function validadeform(event){
+            event.preventDefault();
+            var name = document.getElementById('fname').value;
+            var email = document.getElementById('femail').value;
+            var number = document.getElementById('fnumber').value;
+            var password = document.getElementById('fsenha').value;
+            var date = document.getElementById('fdata').value;
+            console.log(name);
+
+            if(name.trim() === '' || email === '' || number.trim() === '' || password.trim() === '' || date === ''){
+                alert('Por favor preencha todos os campos');
+                return;
+            }else{
+                alert("Cadastro enviado")
+            }
+
+            document.getElementById("form").submit();
+
+        }
+</script>
 </html>
