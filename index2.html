@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="por">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Losnava</title>
-    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro Barberia Losnava</title>
 </head>
 <body>
-     
-    <button id="whatsapp">
-        <a href="#whatsapp">Dúvidas via whatsapp</a>
-    </button>
-    
-
-    <div id="corte">
-        <img src="fundo barbearia.jpeg" alt="corte-barbearia" width="1000px">
-    </div>
-
-    <section id="apresentacao-container">
-        <h4>Bem vindo a pagina da barbearia los nava </h4>
-         <h5> Um novo novo modelo de barbearia, com sistemas de assinatura! E planos e descontos para nossos assinantes, venha fazer parte da nossa familia e aproveitar todos os nossos beneficios que nosso plano oferece. 
-         </h5>
-        <a href="#">Sobre nós</a>
+    <section id="Cadastro">
+        <h2 id="cadastrar">CADASTRAR</h2>
+        <form id="form">
+            <input type="text" id="fname" name="fname" placeholder="Nome:" ><br>
+            <input type="email" id="femail" name="femail" placeholder="Email:"><br>
+            <input type="text" id="fnumber" name="fnumber" placeholder="Telefone:"><br>
+            <input type="date" id="fdata" name="fdata" placeholder="Data de Nascimento:"><br>
+            <input type="password" id="fsenha" name="fsenha" placeholder="Senha:"><br><br>       
+            <input type="submit" onclick="validadeform(event)" value="Confirmar">
+        </form>
     </section>
-
-    
-    <section>
-        <img src="cabelo1.jpeg" class="fade1" width= "150px">
-        <img src="cabelo 2.jpeg" class="fade2" width= "150px">
-        <img src="cabelo 3.jpeg" class="fade3" width= "150px">
-        <img src="cabelo 4.jpeg" class="fade4" width= "150px">
-    </section>
-
-    <button id="proximo">
-        <a href="Tela cadastro.html">Proximo</a>
-    </button>
 </body>
+
+<script type="text/javascript">
+    function validadeform(event){
+            event.preventDefault();
+            var name = document.getElementById('fname').value;
+            var email = document.getElementById('femail').value;
+            var number = document.getElementById('fnumber').value;
+            var password = document.getElementById('fsenha').value;
+            var date = document.getElementById('fdata').value;
+            console.log(name);
+
+            if(name.trim() === '' || email === '' || number.trim() === '' || password.trim() === '' || date === ''){
+                alert('Por favor preencha todos os campos');
+                return;
+            }else{
+                alert("Cadastro enviado")
+            }
+
+            document.getElementById("form").submit();
+
+        }
+</script>
 </html>
